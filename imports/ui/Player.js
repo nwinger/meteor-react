@@ -5,8 +5,8 @@ class Player extends React.Component {
   render() {
     let { player } = this.props;
     return (
-      <p key={player._id}>
-        {player.name} has {player.score} point(s).
+      <div key={player._id} className="item">
+        <p>{player.name} has {player.score} point(s).</p>
         <button
           onClick={() => Players.update(player._id, { $inc: { score: -1 } })}
         >
@@ -20,7 +20,7 @@ class Player extends React.Component {
         <button onClick={() => Players.remove(player._id)}>
           X
         </button>
-      </p>
+      </div>
     );
   }
 }
