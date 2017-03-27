@@ -3,7 +3,7 @@ import React from "react";
 export default class TitleBar extends React.Component {
   renderSubtitle() {
     if (this.props.subTitle) {
-      return <h2>{this.props.subTitle}</h2>;
+      return <h2 className="title-bar__subtitle">{this.props.subTitle}</h2>;
     }
   }
 

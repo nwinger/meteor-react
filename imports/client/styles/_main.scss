@@ -1,23 +1,33 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 html {
-	font-size: 62.5%; // 16px (default browser font size) * 0.625 = 10px as baseline = 1rem
+    font-size: 62.5%; // 16px (default browser font size) * 0.625 = 10px as baseline = 1rem
 }
 
 body {
     background: #f2f2f2;
-	color: #555555;
-	font-family: Helvetica, Arial, sans-serif;
+    color: #555555;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
 }
 
-h1 {
-	font-weight: 300;
-	font-size: 2.4rem;
+input,
+button,
+select {
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 2.4rem;
 }
 
 @import './components/title-bar';
 @import './components/wrapper';
 @import './components/item';
+@import './components/button';
+@import './components/form';
+@import './components/player';

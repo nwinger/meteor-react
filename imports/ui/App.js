@@ -9,7 +9,7 @@ class App extends React.Component {
     let { title, players } = this.props;
     return (
       <div>
-        <TitleBar title={title} />
+        <TitleBar title={title} subTitle="Meteor based score system" />
         <div className="wrapper">
           <PlayerList players={players} />
           <AddPlayer />
